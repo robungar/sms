@@ -1,0 +1,38 @@
+{
+  "name": "sms-test",
+  "version": "0.0.0",
+  "server": false,
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && gulp prod",
+    "postinstall": "npm run build"
+  },
+  "dependencies": {
+    "superagent": "^3.6.1",
+    "turbo360": "latest",
+    "twilio": "^3.7.0"
+  },
+  "devDependencies": {
+    "express": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-less": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+    "nodemon": "latest"
+  },
+  "functions": {
+    "turbo360": "latest",
+    "twilio": "^3.7.0",
+    "superagent": "^3.6.1"
+  },
+  "deploy": [
+    "index.html",
+    "dist"
+  ],
+  "app": "59d0017ed0f26a0012683ecf"
+}
